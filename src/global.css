@@ -1,0 +1,206 @@
+
+body {
+    background-color: black;
+    font-family: fontesite;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: inline-block;
+    margin-right: auto;
+}
+
+.logo {
+    position: relative;;
+    left: 205px;
+    height: 70px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+.imagem {
+    width: 100%;
+    height: auto;
+}
+
+
+.conteudo h1 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+.comprar {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #ffa805;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100px;
+    background-color: #000000;
+    font-size: 30px;
+}
+
+.custom-carousel {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.custom-carousel-container {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px) {
+    .logo {
+        height: 60px;
+    }
+
+    nav ul a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .footer {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        margin-right: 0;
+    }
+
+    .logo {
+        left: 0;
+        height: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 20px;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        font-size: 16px;
+    }
+
+    .comprar {
+        padding: 8px 16px;
+    }
+}
