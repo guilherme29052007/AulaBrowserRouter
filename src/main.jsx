@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Home'
 import Produtos from './Produtos'
-import Ofertas from './Oferta'
+import Ofertas from './Ofertas'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/product' element={<Product/>}/>
-        <Route path='/offer' element={<Offer/>}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Produtos' element={<Produtos/>}/>
+        <Route path='/Ofertas' element={<Ofertas/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,22 +1,16 @@
-import { Link } from "react-router-dom";
-import { Carousel } from "react-responsive-carousel"
-
+import {Link} from "react-router-dom";
 
 export default function Header(){
-    return(
-<>
-    <Carousel/>
-        <header>
-            <Link to='/home'>
-            <p>Home</p>
-            </Link>
-            <Link to='/product'>
-                <p>Product</p>
-            </Link>
-            <Link to='/offer'>
-                <p>Offers</p>
-            </Link>
-        </header>
-</>
-    )
-}
+return(
+    <header className="header">
+        <nav>
+            <img className="logo" src="src/logo.webp" alt="logo" />
+            <ul>
+    <Link to="/"> <h1>Home</h1></Link> 
+    <Link to="/produtos"> <h1>Produtos</h1></Link> 
+    <Link to="/ofertas"><h1>Ofertas</h1></Link> 
+        </ul>
+    </nav>
+    </header>
+)
+} 
